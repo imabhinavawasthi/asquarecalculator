@@ -6,6 +6,7 @@
 
     buttons.forEach(function (button) {
         button.addEventListener('click', function (e) {
+            if(screen.value==="Enter Value")screen.value='';
             let value = e.target.dataset.num;
             screen.value += value;
         })
